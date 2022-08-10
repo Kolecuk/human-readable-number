@@ -1,6 +1,6 @@
 module.exports = function toReadable(number) {
     const arr19 = [
-        '',
+        'zero',
         'one',
         'two',
         'three',
@@ -72,9 +72,7 @@ module.exports = function toReadable(number) {
     }
 
     else {
-        if (+arr[0] > 0) {
-            res = `${arr19[+arr[0]]}`;
-        }
+        res = `${arr19[+arr[0]]}`;
     }
     return res;
 }
