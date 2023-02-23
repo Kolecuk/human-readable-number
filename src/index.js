@@ -31,6 +31,7 @@ module.exports = function toReadable(number) {
         'eighty',
         'ninety',
     ];
+
     const str = Math.abs(number).toString();
     const arr = str.split('');
     let res = '';
@@ -65,7 +66,7 @@ module.exports = function toReadable(number) {
             }
         }
 
-        // else if (+arr[0] === 1) {
+        // else if (+arr[0] === 1)
         else {
             res = `${arr19[+arr[1] + 10]}`;
         }
@@ -76,3 +77,5 @@ module.exports = function toReadable(number) {
     }
     return res;
 }
+
+// Should fix 000 -> 0, 010 -> 8, 011 -> 9, 027 -> 23, ... as it takes these values ​​in 8 system and converts them to 10 system
